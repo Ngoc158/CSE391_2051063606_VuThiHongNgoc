@@ -1,3 +1,51 @@
-.header-wrapper {
-  color: red;
+/* Header wrapper */
+.navbar-header {
+  height: 95.2px;
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
+/* Toogle */
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../assets/toggle-nav.jpg);
+}
+/* Menu link */
+.menu-link .nav-link {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.menu-link .dropdown-menu {
+  background-color: #191919;
+}
+
+.menu-link .dropdown-item {
+  font-weight: 600;
+  color: #fff;
+  font-size: 13px;
+  line-height: 5px;
+  padding: 20px 70px 20px 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.menu-link .dropdown-item:hover {
+  background-color: transparent;
+}
+
+.row-header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }

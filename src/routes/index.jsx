@@ -11,7 +11,7 @@ const RootWrapper = () => {
       <Routes>
         {/* Make new path here */}
         <Route path="/" element={<MainRoute />}>
-          <Route path="home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="menu" element={<MenuBento />} />
         </Route>
       </Routes>
