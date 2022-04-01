@@ -5,8 +5,16 @@
   color: white;
 }
 
+.padding-header-0 .container-fluid {
+  padding: 0;
+}
+
 .navbar-brand:hover {
   cursor: pointer;
+}
+
+.navbar-brand {
+  margin-left: 20px;
 }
 
 /* Toogle */
@@ -17,9 +25,14 @@
 .navbar-light .navbar-toggler-icon {
   background-image: url(../../assets/toggle-nav.jpg);
 }
+
+.navbar-collapse {
+  background-color: black;
+  padding: 15px 5% 30px 5%;
+}
 /* Menu link */
 .menu-link .nav-link {
-  color: white;
+  color: white !important;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.3px;
@@ -46,8 +59,55 @@
 
 .row-header {
   display: flex;
-  flex: 0,5;
+  flex: 1;
   justify-content: space-between;
+  margin-right: 52px;
 }
 
+.not-have-down-arrow a::after {
+  display: none;
+}
 
+.reservation-menu-item {
+  padding: 4px 12px;
+  border: 2px solid #c79a39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-menu-item a {
+  padding: 0;
+}
+
+/* List img menu */
+.canvas-menu-right {
+  padding: 30px 35px;
+}
+.row-img-menu {
+  row-gap: 24px;
+}
+
+.menu-right-name {
+  font-size: 28px !important;
+  font-weight: bold;
+  font-family: monospace;
+  margin-top: 60px;
+}
+.offcanvas-header .btn-close {
+  margin-top: -8.5rem;
+}
+.row-img-menu img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 90px;
+    height: 66px;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1368px) {
+  .reservation-menu-item {
+    width: 15%;
+  }
+}
