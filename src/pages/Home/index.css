@@ -1,0 +1,39 @@
+.carousel-indicators {
+  display: none ;
+}
+
+.title {
+  text-align: center;
+  font-size: 58px;
+  font-family: cursive;
+}
+
+.title2{
+  font-size: 16px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #6f6f6f;
+}
+/*Card*/
+.card-title{
+  font-family: cursive;
+  color: #464646;
+}
+
+.card-item{
+  font-family: sans-serif;
+  color: #6f6f6f;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content {
+  flex: 1;
+}
+
+.btn-detail {
+  margin-top: 50px;
+}
