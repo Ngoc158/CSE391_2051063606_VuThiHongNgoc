@@ -1,11 +1,13 @@
-.carousel-indicators {
+.top-menu-carousel .carousel-indicators {
   display: none ;
 }
 
 .title {
   text-align: center;
+  color: #464646;
   font-size: 58px;
   font-family: cursive;
+  margin-top: 50px;
 }
 
 .title2{
@@ -13,6 +15,7 @@
   text-align: center;
   font-family: sans-serif;
   color: #6f6f6f;
+  margin-top: 20px;
 }
 /*Card*/
 .card-title{
@@ -36,4 +39,133 @@
 
 .btn-detail {
   margin-top: 50px;
+}
+
+.card-group{
+  margin: 0 -10px;
+}
+.card{
+  margin: 0 10px;
+}
+
+.card-body{
+  background: #fcfcfc;
+}
+
+.btn-primary{
+  color: #FFFF;
+  background: #Af872F;
+  border :0;
+}
+
+.title3{
+  text-align:center;
+  font-family: cursive;
+  margin-top: 80px;
+  font-size: 58px;
+  color: #FFFF;
+}
+
+.section{
+  background: #434343E6;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+/*food-menu*/
+.food-menu-wrapper{
+  background : #FFFF;
+  padding: 30px;
+  font: 16px;
+  text-align: center;
+  margin-left: 130px;
+  margin-right: 130px;
+  box-sizing: border-box;
+
+}
+
+.food-price{
+  font: 32px;
+  font-family: cursive;
+  color: #C79A39;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+.food-title{
+   font:36px;
+   font-family: cursive;
+   font-size: 2.3rem;
+   color: #464646;
+}
+
+.food-desc{
+   font: 16px;
+   color: #6f6f6f;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+/* menu tab */
+.menu-tab-item {
+  padding: 30px 10%;
+  position: relative;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-image: url("../../assets/wallrepeat.png");
+}
+.menu-tab-item img {
+  width: 100%;
+  aspect-ratio: 1 /1 ;
+  object-fit: cover;
+  margin-bottom: 78px;
+}
+.btn-dicover {
+  padding: 5px 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.95;
+}
+
+.tabs-card {
+    font: 20px;
+    font-family: cursive;
+    color: #6F6F6F;
+}
+
+.avatar-menu-item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20% 0;
+  height: 600px;
+}
+
+.avatar-menu-item .carousel-indicators {
+  margin-bottom : -2rem
+}
+
+
+.avatar-menu-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.text-center{
+   font:21px;
+   font-family: cursive;
+   color: #6f6f6f;
+}
+
+.Name{
+  font: 18px;
+  font-family: sans-serif;
+  color: #464646;
+}
+
+.customer{
+  font: 16px;
+  font-family: sans-serif;
+  color: #AAAA;
 }
