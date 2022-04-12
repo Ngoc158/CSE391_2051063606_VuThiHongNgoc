@@ -1,0 +1,52 @@
+.footer{
+  background-color: black;
+  margin-top: 50px;
+  height: 700px;
+  padding: 150px 5% 20px 5%;
+}
+
+.footer-card{
+  background: black !important;
+}
+
+.btn .btn-primary{
+  background: border-box ;
+  color: #C79A39;
+  font: 16px;
+  font-family: sans-serif;
+}
+
+
+
+.title-0{
+    text-align: center;
+    color: #FFFF;
+    font-size: 34px;
+    font-family: cursive;
+}
+
+.footer-title{
+  display: block;
+  font-family: cursive;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: #FFFF !important;
+}
+
+.footer-text{
+  color:#FFFF;
+  font-family: sans-serifss;
+}
+
+.subfooter{
+  background: #101010;
+}
+
+.sub{
+  text-align: center;
+  font: 14px;
+  color: #DDDD;
+  font-family: sans-serif;
+  margin-top: 90px;
+}
