@@ -1,5 +1,13 @@
+/*Carousel*/
 .top-menu-carousel .carousel-indicators {
   display: none ;
+}
+
+.carousel-control-prev{
+  justify-content: left;
+}
+.carousel-control-next{
+  justify-content: right;
 }
 
 .title {
@@ -132,6 +140,7 @@
     font: 20px;
     font-family: cursive;
     color: #6F6F6F;
+    justify-content: center;
 }
 
 .avatar-menu-item {

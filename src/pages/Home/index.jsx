@@ -189,6 +189,7 @@ const cardmenuArr = [
 const Home = () => {
   return (
     <div>
+      {/* Carousel */}
       <Carousel className="top-menu-carousel">
         {homeArr.map((item, index) => (
           <Carousel.Item>
@@ -203,7 +204,9 @@ const Home = () => {
                 <div>
                   have awesome recipes and the most talented chefs in tow
                 </div>
-                <div>More Detail</div>
+                <div className="d-flex justify-content-center btn-detail">
+                  <Button>More Detail</Button>
+                </div>
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -245,7 +248,6 @@ const Home = () => {
           </Card>
         ))}
       </CardGroup>
-
       <div className="section">
         <div className="title3">Check Our Daily Specials</div>
         <div>
