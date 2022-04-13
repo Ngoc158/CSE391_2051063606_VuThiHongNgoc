@@ -11,6 +11,8 @@ import Content3 from "../../assets/content3.jpg";
 import Card4 from "../../assets/card-4.jpg";
 import Card5 from "../../assets/card-5.jpg";
 import Card6 from "../../assets/card-6.jpg";
+import MenuIcon1 from "../../assets/menu-icon-1.png";
+import MenuIcon2 from "../../assets/menu-icon-2.png";
 
 const menuStyleArr = [
   {
@@ -21,17 +23,17 @@ const menuStyleArr = [
   {
     eventKey: "Dinner",
     title: "Dinner",
-    img: MenuStyle4,
+    img: MenuStyle3,
   },
   {
     eventKey: "Dessert",
     title: "Dessert",
-    img: MenuStyle3,
+    img: MenuStyle4,
   },
   {
     eventKey: "Main",
     title: "Main",
-    img: MenuStyle4,
+    img: MenuStyle2,
   },
 ];
 
@@ -104,15 +106,26 @@ const cardMenuArr = [
 const MenuBento = () => {
   return (
     <div>
-      <div className="title">Discover Our menu</div>
-      <p className="title2">
-        <div>
+      <div className="menu-first">
+        <div className="title">
+          <img src={MenuIcon1} alt="icon" />
+        </div>
+        <div className="title">MENU</div>
+        <div className="title1">Home / Menu</div>
+      </div>
+      <div>
+        <div className="title2">Discover Our menu</div>
+        <div className="menu-icon-2">
+          <img src={MenuIcon2} alt="icon" />
+        </div>
+        <div className="title3">
           Everyone has taste, even if they don't realize it. Even if you're not
           a great chef, there's nothing to stop you understanding the difference
           between what taste good and what doesn't.
         </div>
-      </p>
+      </div>
 
+      {/*Menu tabs */}
       <Tabs
         defaultActiveKey="Lunch"
         transition={false}
@@ -133,7 +146,10 @@ const MenuBento = () => {
 
       {/*Content*/}
       <div className="section">
-        <div className="title3">Our Guestbook</div>
+        <div className="title4">Our Guestbook</div>
+        <div className="menu-icon-2">
+          <img src={MenuIcon2} alt="icon" />
+        </div>
         <Carousel className="avatar-menu-item">
           {contentArr.map((item, index) => (
             <Carousel.Item>
@@ -150,14 +166,15 @@ const MenuBento = () => {
         </Carousel>
       </div>
 
-      <div className="title">Our New & Event</div>
-      <p className="title2">
-        <div>
-          Follow our lates news updates to know about our offers, recipes and
-          events. One cannot think well, love well, sleep well, if one has not
-          dined well.
-        </div>
-      </p>
+      <div className="title2">Our New & Event</div>
+      <div className="menu-icon-2">
+        <img src={MenuIcon2} alt="icon" />
+      </div>
+      <div className="title3">
+        Follow our lates news updates to know about our offers, recipes and
+        events. One cannot think well, love well, sleep well, if one has not
+        dined well.
+      </div>
 
       {/* card */}
       <CardGroup>
