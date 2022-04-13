@@ -1,8 +1,9 @@
-import { Button } from "react-bootstrap";
-import React from "react";
+import { Button, Container, Form, Row } from "react-bootstrap";
+import React, { useState } from "react";
 import { Card, CardGroup } from "react-bootstrap";
 
 import "./index.css";
+import { Modal } from "react-bootstrap";
 
 const footerArr = [
   {
@@ -37,7 +38,36 @@ const footerArr = [
     btnContent: <Button>SEND MESSAGE</Button>,
   },
 ];
+
+const controlsArr = [
+  {
+    placeholder: "Name",
+  },
+  {
+    placeholder: "Phone",
+  },
+  {
+    placeholder: "Email",
+  },
+
+  {
+    placeholder: "Number of Guest",
+  },
+
+  {
+    placeholder: "09/02/2021",
+  },
+
+  {
+    placeholder: "Time",
+  },
+];
 const PageFooter = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div>
       <div className="footer">
@@ -59,7 +89,37 @@ const PageFooter = () => {
           ))}
         </CardGroup>
         <div className="d-flex justify-content-center  ">
-          <Button>Book Now</Button>
+          <Button variant="primary" onClick={handleShow}>
+            Book Now
+          </Button>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            backdrop="static"
+            keyboard={false}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>Online Reservation</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Container>
+                <Row className="row-controls">
+                  {controlsArr.map((item, index) => (
+                    <Form.Control type="text" placeholder={item.placeholder} />
+                  ))}
+                </Row>
+                <Form.Control
+                  className="control-text"
+                  as="textarea"
+                  rows={6}
+                  placeholder="Your Message"
+                />
+              </Container>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="primary">Send Messegar</Button>
+            </Modal.Footer>
+          </Modal>
         </div>
         <div className="subfooter">
           <div className="sub">Copyright©2021 D'bento All Rights Reserved.</div>
