@@ -107,18 +107,18 @@ const MenuBento = () => {
   return (
     <div>
       <div className="menu-first">
-        <div className="title">
+        <div className="menu-icon-1">
           <img src={MenuIcon1} alt="icon" />
         </div>
-        <div className="title">MENU</div>
+        <div className="title3">MENU</div>
         <div className="title1">Home / Menu</div>
       </div>
       <div>
-        <div className="title2">Discover Our menu</div>
+        <div className="title">Discover Our menu</div>
         <div className="menu-icon-2">
           <img src={MenuIcon2} alt="icon" />
         </div>
-        <div className="title3">
+        <div className="title2">
           Everyone has taste, even if they don't realize it. Even if you're not
           a great chef, there's nothing to stop you understanding the difference
           between what taste good and what doesn't.
@@ -136,7 +136,7 @@ const MenuBento = () => {
           <Tab
             eventKey={item.eventKey}
             title={item.title}
-            className="menu-tab-item"
+            className="menu-tab-item-1"
             key={index}
           >
             <img src={item.img} alt="tab" />
@@ -145,8 +145,8 @@ const MenuBento = () => {
       </Tabs>
 
       {/*Content*/}
-      <div className="section">
-        <div className="title4">Our Guestbook</div>
+      <div className="section-menu">
+        <div className="title3">Our Guestbook</div>
         <div className="menu-icon-2">
           <img src={MenuIcon2} alt="icon" />
         </div>
@@ -166,11 +166,11 @@ const MenuBento = () => {
         </Carousel>
       </div>
 
-      <div className="title2">Our New & Event</div>
+      <div className="title">Our New {"&"} Event</div>
       <div className="menu-icon-2">
         <img src={MenuIcon2} alt="icon" />
       </div>
-      <div className="title3">
+      <div className="title2">
         Follow our lates news updates to know about our offers, recipes and
         events. One cannot think well, love well, sleep well, if one has not
         dined well.

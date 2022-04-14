@@ -112,7 +112,9 @@ const PageHeader = () => {
         onMouseLeave={() => handleHideDropdown(setShowGallery)}
         className="menu-link"
       >
-        <NavDropdown.Item>Portofolio</NavDropdown.Item>
+        <NavDropdown.Item onClick={() => navigate("/gallery")}>
+          Portofolio
+        </NavDropdown.Item>
         <NavDropdown.Item>Portofolio-3</NavDropdown.Item>
         <NavDropdown.Item>Portofolio-4</NavDropdown.Item>
       </NavDropdown>

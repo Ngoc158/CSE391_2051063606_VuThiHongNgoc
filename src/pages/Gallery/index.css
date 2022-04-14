@@ -1,0 +1,83 @@
+.gallery-first{
+    background-image: url("../../assets//gallery.jpg");
+    height: 460px;
+    background-size: cover;
+  }
+
+.gallery-icon-1 {
+    text-align:center;
+  }
+
+.gallery-icon-2 {
+    text-align:center;
+  }
+
+.title {
+    text-align: center;
+    color: #464646;
+    font-size: 58px;
+    font-family: cursive;
+    margin-top: 50px;
+  }
+
+.title1 {
+    text-align:center;
+    font-family: sans-serif;
+    color: #FFFF;
+  }
+
+.title2{
+    font-size: 16px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #6f6f6f;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+    letter-spacing: .3px;
+  }
+
+.title3{
+    text-align:center;
+    font-family: cursive;
+    margin-top: 80px;
+    font-size: 58px;
+    color: #FFFF;
+  }
+
+.section-gallery{
+    background-image: url("../../assets/wall-menu.jpg");
+    background-size: cover;
+    padding: 0.02px 50px 100px 50px;
+    margin-top: 60px;
+  }
+
+  /* menu tab */
+.gallery-tab-item-1 {
+    padding: 30px 10%;
+    position: relative;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background: white
+  }
+
+.gallery-tab-item-1 img {
+    width: 50%;
+    aspect-ratio: 1 /1 ;
+    object-fit: cover;
+    margin-bottom: 78px;
+  }
+
+  .btn-dicover {
+    padding: 5px 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.95;
+  }
+  .tabs-card {
+    font: 20px;
+    font-family: cursive;
+    color: #6F6F6F;
+    justify-content: center;
+  }
