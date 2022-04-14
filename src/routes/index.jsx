@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 const MainRoute = lazy(() => import("./mainRoute"));
 const Home = lazy(() => import("../pages/Home/index"));
 const MenuBento = lazy(() => import("../pages/MenuBento"));
+const Gallery = lazy(() => import("../pages/Gallery"));
 
 const RootWrapper = () => {
   return (
@@ -13,6 +14,7 @@ const RootWrapper = () => {
         <Route path="/" element={<MainRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="menu" element={<MenuBento />} />
+          <Route path="gallery" element={<Gallery />} />
         </Route>
       </Routes>
     </BrowserRouter>
